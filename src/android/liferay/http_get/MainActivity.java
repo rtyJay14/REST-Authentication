@@ -71,7 +71,14 @@ public class MainActivity extends Activity implements OnClickListener {
 }
 
 MainActivity(){
-	new RequestResponse().execute();
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+		
+		new RequestResponse().execute();
+	}
+
 }
 
 public class RequestResponse extends AsyncTask<Void, Void, String> {

@@ -81,7 +81,7 @@ MainActivity(){
 
 }
 
-public class RequestResponse extends AsyncTask<Void, Void, String> {
+/*public class RequestResponse extends AsyncTask<Void, Void, String> {
 	
 	String a1 = "";
 	String a2 = "";
@@ -141,6 +141,10 @@ public class RequestResponse extends AsyncTask<Void, Void, String> {
 	protected void onPostExecute(String results) {
 		super.onPostExecute(results);
 
-		rl.onResultListener(results);
+		// rl.onResultListener(results);
+		EditText et = (EditText)findViewById(R.id.my_edit);
+		et.setText(results);
+			
+		svcDialog.dismiss();
 	}
-}
+}*/

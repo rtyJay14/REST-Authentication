@@ -70,7 +70,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	}
 }
 
-MainActivity(){
+/* MainActivity(){
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -81,7 +81,7 @@ MainActivity(){
 
 }
 
-/*public class RequestResponse extends AsyncTask<Void, Void, String> {
+public class RequestResponse extends AsyncTask<Void, Void, String> {
 	
 	String a1 = "";
 	String a2 = "";
